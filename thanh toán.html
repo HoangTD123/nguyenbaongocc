@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .checkout {
+            margin-left: 15px;
+            color: #cec4c4;
+        }
+
+        .border-custom {
+            border-color: #2a723c !important;
+        }
+
+        .chi_tiet input button {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" alt="Kaphenut Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="navbar navbar-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="trang chủ.html">
+                        <i class="fas fa-home menu-icon"></i>Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Bộ sưu tập len.html">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="khuyến mãi.html">Khuyến mãi</a>
+                </li>
+            </ul>
+            <div class="icon-group d-flex flex-row">
+                <a href="#" class="text-dark me-3"><i class="fas fa-user"></i></a>
+                <a href="thanh toán.html" class="text-dark me-3"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <div class="container py-4">
+        <h2 class="mb-3" style="color: #617d26;">Giỏ hàng</h2>
+    </div>
+
+
+    <!-- Giỏ hàng -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Sản phẩm</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Tổng cộng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-top border-bottom border-success border-custom align-middle">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="Images/hoa 7.jpg" alt="Hoa" width="100" class="img-fluid me-3">
+                                <span>Bó Hoa Len</span>
+                            </div>
+                        </td>
+                        <td>280.000 VND</td>
+                        <td>
+                            <div class="input-group" style="width: 150px; margin: 0 auto;">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-secondary" type="button">-</button>
+                                </div>
+                                <input type="text" class="form-control text-center" value="1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>280.000 VND <button class="btn checkout">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row" style="background-color: #e1edc8;">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td>Thành tiền</td>
+                            <td>280.000 VND</td>
+                        </tr>
+                        <tr>
+                            <td>Giảm giá</td>
+                            <td>0 VND</td>
+                        </tr>
+                        <tr>
+                            <td class="font-weight-bold">Tổng đơn hàng</td>
+                            <td class="font-weight-bold text-danger">280.000 VND</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-muted">* Lưu ý: Phí vận chuyển được tính khi thanh toán</p>
+            </div>
+        </div>
+        <div class="py-5 chi_tiet">
+            <div class="row gx-4">
+                <!-- Cột bên trái -->
+                <div class="col-md-6 d-flex flex-column">
+                    <!-- Số tuổi -->
+                    <div class="row mb-3">
+                        <div class="col-md-4 mb-3">
+                            <!-- Loại nến -->
+                            <div class="form-group">
+                                <label class="mb-3">Loại Thiệp</label>
+                                <div>
+                                    <button class="btn btn-outline-success me-2">Thiệp giấy viết tay</button>
+                                    <button class="btn btn-outline-success">Thiệp tag treo</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <!-- Nội dung ghi trên thiệp -->
+                            <div class="form-group">
+                                <label class="mb-3">Nội dung ghi trên thiệp</label>
+                                <input type="text" class="form-control" placeholder="Nhập nội dung">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yêu cầu khác -->
+                    <div class="form-group mb-4">
+                        <label class="mb-3">Yêu cầu khác (nếu có)</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <!-- Cột bên phải -->
+                <div class="col-md-6 d-flex flex-column" style="color: #faba59;">
+                    <!-- Thời gian nhận hàng -->
+                    <div class="form-group mb-3">
+                        <label class="mb-3">Thời gian nhận hàng mong muốn</label>
+                        <div class="mb-4">
+                            <input type="date" class="form-control" placeholder="Chọn ngày">
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <div class="mb-4">
+                            <input type="time" class="form-control" placeholder="Chọn giờ">
+                        </div>
+                    </div>
+
+                    <!-- Nút tiếp tục và thanh toán -->
+                    <div class="row mb-3">
+                        <div class="d-flex justify-content-between w-100">
+                            <div class="col-md-5 text-start">
+                                <a href="trang chủ.html">
+                                    <button class="btn btn-link w-100" style="text-decoration: none;" type="button">
+                                        <-- Tiếp tục Mua Hàng </button>
+                                </a>
+                            </div>
+                            <div class="col-md-5 text-end">
+                                <button type="button" class="btn btn-primary w-100">
+                                    Tiến hành thanh toán
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+    <!-- End Giỏ hàng -->
+
+    <!-- contact  -->
+    <div class="container" id="contact" data-aos="fade-up" data-aos-duration="1500">
+        <h1>CONTACT US</h1>
+        <div class="row">
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="eml" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="phn" placeholder="Phone">
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+        </div>
+        <div id="messagebtn"><button>Send Message</button></div>
+    </div>
+    <!-- contact end -->
+
+    <!-- Thông tin-->
+    <div class="container text-center py-5">
+        <h3 class="text-success fw-bold">"Gửi trọn yêu thương trong từng sản phẩm"</h3>
+        <div class="row mt-4">
+            <!-- Mục 1 -->
+            <div class="col-6 col-md-3 mb-4">
+                <img src="Images/nguyên liệu.jpg" alt="Nguyên liệu chất lượng" class="img-fluid mb-3">
+                <h5 class="fw-bold">Nguyên liệu chất lượng</h5>
+            </div>
+            <!-- Mục 2 -->
+            <div class="col-6 col-md-3 mb-4">
+                <img src="Images/kỹ thuật.jpg" alt="Làm mới mỗi ngày" class="img-fluid mb-3">
+                <h5 class="fw-bold">Kỹ thuật chất lượng</h5>
+            </div>
+            <!-- Mục 3 -->
+            <div class="col-6 col-md-3 mb-4">
+                <img src="Images/thiết kế.jpg" alt="Sức khỏe và an toàn" class="img-fluid mb-3">
+                <h5 class="fw-bold">Thiết kế độc bản</h5>
+            </div>
+            <!-- Mục 4 -->
+            <div class="col-6 col-md-3 mb-4">
+                <img src="Images/vận chuyển.jpg" alt="Giao hàng nhanh chóng" class="img-fluid mb-3">
+                <h5 class="fw-bold">Giao hàng nhanh chóng</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--End Thông tin-->
+
+    <!-- Footer -->
+    <footer class="text-white py-4" style="background-color: #e1edc8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-dark">
+                    <p>Hotline: 0123456789</p>
+                    <p>Email: moonlen@gmail.com</p>
+                    <p>Địa chỉ: 21 Ngũ Hành Sơn, Tp Đà Nẵng</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <img src="Images/logo nền xanh.png" alt="Logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiệm Len Moon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" alt="Tiệm len Moon Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="navbar navbar-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="trang chủ.html">
+                        <i class="fas fa-home menu-icon"></i>Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Bộ sưu tập len.html">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="khuyến mãi.html">Khuyến mãi</a>
+                </li>
+            </ul>
+            <div class="icon-group d-flex flex-row">
+                <a href="Đăng nhập.html" class="text-dark me-3"><i class="fas fa-user"></i></a>
+                <a href="thanh toán.html" class="text-dark me-3"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="text-dark"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Banner -->
+    <div class="container-fluid mt-3" style="background-color: #e1edc8;">
+        <div class="row">
+            <div class="col-md-6 img-container banner"> <!-- Thêm lớp img-container -->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <img src="Images/ảnh trang chủ 2.png" class="d-block w-100" alt="Hình ảnh bánh 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 banner">
+                <div class="banner-content text-center">
+                    <h2 class="title"
+                        style="font-family:'Times New Roman', Times, serif; color: #345406; font-size: 140%">KHOẢNH KHẮC
+                        NGỌT NGÀO CÙNG MOON!</h2>
+                    <p style="text-align: justify; text-justify: inter-word;">
+                        "Hãy để Moon đưa bạn đến một thế giới nhỏ bé ngọt ngào, nơi những sợi len mềm mại dệt nên niềm
+                        vui mỗi ngày.
+                        Với những chú gấu nhỏ xinh xắn, từng mũi khâu tỉ mỉ và sắc màu ấm áp, mỗi món quà từ Moon đều
+                        mang theo một câu chuyện yêu thương riêng biệt.
+                        Đó chính là sự chân thành mà chúng mình muốn gửi gắm đến bạn."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Banner -->
+
+    <!-- Sản phẩm -->
+    <section class="py-4">
+        <div class="container">
+            <h2 class="text-center mb-3" style="font-family: 'Times New Roman', Times, serif; color: #97ca51;">Sản phẩm
+                nổi bật</h2>
+        </div>
+        <div class="border-top border-bottom border-success">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-2 g-lg-3" id="featured-products">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Images/ảnh trang chủ.png" class="card-img-top" alt="Combo thú củ len">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo thú củ len</h5>
+                                <p class="card-text small text-muted">Mã sản phẩm: 21</p>
+                                <p class="money fw-bold">780.000 VNĐ</p>
+                                <a href="thanh toán.html" class="btn btn-yellow">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Images/combo child.png" class="card-img-top" alt="Combo child">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo child</h5>
+                                <p class="card-text small text-muted">Mã sản phẩm: 22</p>
+                                <p class="money fw-bold">520.000 VNĐ</p>
+                                <a href="thanh toán.html" class="btn btn-yellow">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Images/thú 1.png" class="card-img-top" alt="Dragon Fruit">
+                            <div class="card-body">
+                                <h5 class="card-title">Dragon Fruit</h5>
+                                <p class="card-text small text-muted">Mã sản phẩm: 12</p>
+                                <p class="money fw-bold">129.000 VNĐ</p>
+                                <a href="thanh toán.html" class="btn btn-yellow">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Images/thú 5.png" class="card-img-top" alt="Raccorn">
+                            <div class="card-body">
+                                <h5 class="card-title">Raccorn</h5>
+                                <p class="card-text small text-muted">Mã sản phẩm: 03</p>
+                                <p class="money fw-bold">85.000 VNĐ</p>
+                                <a href="thanh toán.html" class="btn btn-yellow">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Images/child 6.png" class="card-img-top" alt="Tiger">
+                            <div class="card-body">
+                                <h5 class="card-title">Tiger</h5>
+                                <p class="card-text small text-muted">Mã sản phẩm: 11</p>
+                                <p class="money fw-bold">75.000 VNĐ</p>
+                                <a href="thanh toán.html" class="btn btn-yellow">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Sản phẩm -->
+
+    <!-- Danh mục sản phẩm -->
+    <section class="py-4">
+        <div class="container">
+            <h2 class="text-center mb-3" style="font-family: 'Times New Roman', Times, serif; color: #97ca51;">Danh mục
+                sản phẩm</h2>
+        </div>
+        <div class="border-top border-bottom border-success">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-3" id="featured-products">
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="Bộ sưu tập len.html"> <img src="Images/ảnh trang chủ.png" class="card-img-top"
+                                    alt="Bộ sưu tập len">
+                                <div class="overlay">Bộ sưu tập len</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="Combo len thú.html"> <img src="Images/combo child.png" class="card-img-top"
+                                    alt="Combo Cuddly">
+                                <div class="overlay">Combo Len Thú</div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="Hoa Len.html"> <img src="Images/hoa 6.jpg" class="card-img-top" alt="Hoa Len">
+                                <div class="overlay">Hoa Len</div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="Combo len đại dương.html"> <img src="Images/ảnh trang chủ 2.png"
+                                    class="card-img-top" alt="Combo len đại dương">
+                                <div class="overlay">Combo Len Đại Dương</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Danh mục sản phẩm -->
+
+    <!-- Giới thiêu-->
+    <section class="py-4">
+        <div class="container">
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-md-6 img-container banner">
+                        <img src="Images/combo child.png" alt="Combo thú 1" class="img-fluid custom-img">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column banner">
+                        <h2 class="text-success fw-bold">Giới thiệu về Tiệm len Moon</h2>
+                        <p style="text-align: justify; font-size: 1.2rem;">
+                            Được biết đến như một biểu tượng của nghệ thuật thủ công sáng tạo, những món đồ len của Moon
+                            không chỉ gói trọn nét duyên dáng, tinh tế trong từng mũi móc mà còn là “biểu tượng” của
+                            lòng quan tâm, sự chăm sóc dịu dàng mà bạn muốn gửi trao đến những người thân yêu.
+                        </p>
+                        <p style="text-align: justify; font-size: 1.2rem;">
+                            Đặt tiêu chí “Chất lượng & Sáng tạo” làm ưu tiên hàng đầu, Moon không ngừng cải tiến và hoàn
+                            thiện quy trình để mang đến những trải nghiệm tốt nhất cho khách hàng: nguyên liệu an toàn,
+                            kỹ thuật tinh xảo, thiết kế độc bản.
+                            Trên tất cả, niềm động lực lớn nhất của Moon chính là sự công nhận và tin yêu ngày càng lớn
+                            mà Bạn đã dành cho tiệm. Hãy để Moon cùng bạn dệt nên những kỷ niệm ấm áp nhất!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Giới thiệu-->
+
+    <!-- contact  -->
+    <div class="container" id="contact" data-aos="fade-up" data-aos-duration="1500">
+        <h1>CONTACT US</h1>
+        <div class="row">
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="eml" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="phn" placeholder="Phone">
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+        </div>
+        <div id="messagebtn"><button>Send Message</button></div>
+    </div>
+    <!-- contact end -->
+
+    <!-- Thông tin-->
+    <div class="container text-center py-5">
+        <h3 class="text-success fw-bold">"Gửi trọn yêu thương trong từng sản phẩm"</h3>
+        <div class="row mt-4">
+            <!-- Mục 1 -->
+            <div class="col-6 col-md-3 mb-4 d-flex flex-column align-items-center">
+                <img src="Images/nguyên liệu.jpg" alt="Nguyên liệu chất lượng" width="100" height="100"
+                    class="img-fluid mb-3">
+                <h5 class="fw-bold text-dark text-center mt-2">Nguyên liệu chất lượng</h5>
+            </div>
+            <!-- Mục 2 -->
+            <div class="col-6 col-md-3 mb-4 d-flex flex-column align-items-center">
+                <img src="Images/kỹ thuật.jpg" alt="Kỹ thuật chất lượng" width="100" height="100"
+                    class="img-fluid mb-3">
+                <h5 class="fw-bold text-dark text-center mt-2">Kỹ thuật chất lượng</h5>
+            </div>
+            <!-- Mục 3 -->
+            <div class="col-6 col-md-3 mb-4 d-flex flex-column align-items-center">
+                <img src="Images/thiết kế.jpg" alt="Thiết kế độc bản" width="100" height="100" class="img-fluid mb-3">
+                <h5 class="fw-bold text-dark text-center mt-2">Thiết kế độc bản</h5>
+            </div>
+            <!-- Mục 4 -->
+            <div class="col-6 col-md-3 mb-4 d-flex flex-column align-items-center">
+                <img src="Images/vận chuyển.jpg" alt="Giao hàng nhanh chóng" width="100" height="100"
+                    class="img-fluid mb-3">
+                <h5 class="fw-bold text-dark text-center mt-2">Giao hàng nhanh chóng</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--End Thông tin-->
+
+    <!-- Footer -->
+    <footer class="text-white py-4" style="background-color: #e1edc8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-dark">
+                    <p style=" letter-spacing: 2px;">Hotline: 0123456789</p>
+                    <p style=" letter-spacing: 2px;">Email: moonlen@gmail.com</p>
+                    <p style=" letter-spacing: 2px;">Địa chỉ: 21 Ngũ Hành Sơn, Tp Đà Nẵng</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <img src="Images/logo nền xanh.png" alt="Logo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+        </script>
+
+</body>
+
+</html>
